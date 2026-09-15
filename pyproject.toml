@@ -1,0 +1,17 @@
+[project]
+name = "basic-python-course"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Aashutosh", email = "aashutoshchaudhary9818@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+basic-python-course = "basic_python_course:main"
+
+[build-system]
+requires = ["uv_build>=0.12.11,<0.13.0"]
+build-backend = "uv_build"

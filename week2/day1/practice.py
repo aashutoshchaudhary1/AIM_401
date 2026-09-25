@@ -1,60 +1,95 @@
-# count = 1
-# while count < 50:
-#     if count == 4:
-#         break
-#     print(f"count is {count}")
-#     count += 1
-# print("Loop ended")
+# # count = 1
+# # while count < 50:
+# #     if count == 4:
+# #         break
+# #     print(f"count is {count}")
+# #     count += 1
+# # print("Loop ended")
     
 
-# continue statement
-# i = 0
-# while i <5:
-#     i+=1
+# # continue statement
+# # i = 0
+# # while i <5:
+# #     i+=1
 
-#     if i ==3:
-#         continue
-#     print(i)
+# #     if i ==3:
+# #         continue
+# #     print(i)
 
-# pass statement
-# count = 0
-# while count < 4:
-#     count+=1
-#     if count==2:
-#         pass
-#     else:
-#         print(f"Processing numebr: {count}")
+# # pass statement
+# # count = 0
+# # while count < 4:
+# #     count+=1
+# #     if count==2:
+# #         pass
+# #     else:
+# #         print(f"Processing numebr: {count}")
 
-# Number guessing game
-# number = int(input("Guess a number between 1 to 100: "))
-# while number != 40:
-#     if number < 40:
-#         print("You guessed too low")
-#         number = int(input("Guess a number between 1 to 10: "))
-#     elif number > 40:
-#         print("You guessed too high")
-#         number = int(input("Guess a number between 1 to 10: "))
+# # Number guessing game
+# # number = int(input("Guess a number between 1 to 100: "))
+# # while number != 40:
+# #     if number < 40:
+# #         print("You guessed too low")
+# #         number = int(input("Guess a number between 1 to 10: "))
+# #     elif number > 40:
+# #         print("You guessed too high")
+# #         number = int(input("Guess a number between 1 to 10: "))
         
-# print("You guessed correct")
+# # print("You guessed correct")
 
 
-# ATM Machine
-balance = 0
-while True:
-    print("1.Deposit")
-    print("2.Display")
-    print("3.Exit")
+# # ATM Machine
+# balance = 0
+# while True:
+#     print("1.Deposit")
+#     print("2.Display")
+#     print("3.Exit")
 
-    option=int(input("Enter your choice: "))
+#     option=int(input("Enter your choice: "))
 
-    if option == 1:
-        amount= int(input("Enter the amount to deposit: "))
-        print(f"Amount deposited: {amount}")
-        balance+=amount
-    elif option == 2:
-        print(f"Current balance: {balance}")
-    elif option == 3:
-        break
-    else:
-        print("Invalid choice")
+#     if option == 1:
+#         amount= int(input("Enter the amount to deposit: "))
+#         print(f"Amount deposited: {amount}")
+#         balance+=amount
+#     elif option == 2:
+#         print(f"Current balance: {balance}")
+#     elif option == 3:
+#         break
+#     else:
+#         print("Invalid choice")
 
+
+# # list
+# numbers = list(range(1, 11))
+
+# # Extract odd numbers using another list (list comprehension)
+# odd_numbers = [num for num in numbers if num % 2 != 0]
+
+# print("Original list:", numbers)
+# print("Odd numbers list:", odd_numbers)
+
+
+
+first = [20, 30, 40]
+second =first
+third = list(first)
+
+
+first = second
+print(first is second)
+print(first is third)
+print(third is second)
+
+
+# --- Merging Three Dictionaries ---
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'c': 3, 'd': 4}
+dict3 = {'e': 5, 'f': 6}
+
+# Method 1: Using the | operator (Python 3.9+)
+merged_dict = dict1 | dict2 | dict3
+print("Merged Dictionary (using | operator):", merged_dict)
+
+# Method 2: Using dictionary unpacking (** operator)
+merged_dict_unpack = {**dict1, **dict2, **dict3}
+print("Merged Dictionary (using ** unpacking):", merged_dict_unpack)
